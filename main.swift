@@ -29,6 +29,7 @@ func imprimePROG (){
   let c2 = Producto(prodT: producto, precO: precio)
   proDuc.append(c2)
   }
+  proDuc.sort(by: { $0.precO > $1.precO })
   for producto in proDuc {
   producto.imprime()
   }
